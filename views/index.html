@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Computer Blocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="ui container" align="center">
+        <br>
+        <h4 class="ui large header">Computer  Blocks</h4>
+        <button class="ui button">HOME</button>
+        <button class="ui disabled button">HELP</button>
+        <button class="ui right labeled icon button" id="downloadTabButton">
+            <i class="download icon"></i>
+            DOWNLOAD
+        </button>
+        <button class="ui disabled button">ABOUT</button>
+
+        <br> <br>
+
+        <script type="text/javascript">
+            document.getElementById("downloadTabButton").onclick = function () {
+                location.href = "https://github.com/liam-b/computer-blocks/releases";
+            };
+        </script>
+
+    </div>
+    <br> <br>
+    <div class="ui text container">
+        <b>What is Computer Blocks?</b> <br>
+        Computerblocks is a tool used to simulate digital circuitry and logic gates.
+        It is based on a grid and revolves around cables, inverters and source blocks which when used together can theoretically produce any digital program or computer.
+        <br><br>
+        <b>Who are we?</b> <br>
+        Computerblocks is a passion project started by a pair of high school students from Melbourne, Australia.
+        We started this as a fun little thing to do but quickly our heads filled with new ideas and ambition.
+        We hope that someday this could be used by many people for both educational and hobbyist purposes.
+    </div>
+</body>
+</html>
