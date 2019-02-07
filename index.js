@@ -1,10 +1,13 @@
-var express = require('express');
-var app = express();
-var path = require('path');
+var express = require('express')
+var app = express()
+var path = require('path')
 
-// viewed at http://localhost:8080
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/views/index.html'));
-});
+app.set('view engine', 'html')
+app.set('views', path.join(__dirname, 'views'))
+app.use(express.static(path.join(__dirname, 'views')))
 
-app.listen(8080);
+app.get('/', (req, res) => {
+  res.render('index')
+})
+
+app.listen(8080 || process.env.PORT)
