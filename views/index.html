@@ -9,27 +9,26 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="ui container" align="center">
+
+    <!-- Header -->
+    <div class="ui text container" align="center">
         <br>
         <h4 class="ui large header">Computer  Blocks</h4>
-        <button class="ui button">HOME</button>
+        <a href="/"> <button class="ui primary button" id="homeTabButton">HOME</button> </a>
         <button class="ui disabled button">HELP</button>
-        <button class="ui right labeled icon button" id="downloadTabButton">
-            <i class="download icon"></i>
-            DOWNLOAD
-        </button>
-        <button class="ui disabled button">ABOUT</button>
-
-        <br> <br>
-
-        <script type="text/javascript">
-            document.getElementById("downloadTabButton").onclick = function () {
-                location.href = "https://github.com/liam-b/computer-blocks/releases";
-            };
-        </script>
-
+        <a href="https://github.com/liam-b/computer-blocks/releases">
+            <button class="ui right labeled icon button" id="downloadTabButton">
+                <i class="download icon"></i>
+                DOWNLOAD
+            </button>
+        </a>
+        <a href="/about"> <button class="ui button" id="aboutTabButton">ABOUT</button> </a>
     </div>
+
+
     <br> <br>
+
+
     <div class="ui text container">
         <b>What is Computer Blocks?</b> <br>
         Computerblocks is a tool used to simulate digital circuitry and logic gates.
@@ -39,6 +38,66 @@
         Computerblocks is a passion project started by a pair of high school students from Melbourne, Australia.
         We started this as a fun little thing to do but quickly our heads filled with new ideas and ambition.
         We hope that someday this could be used by many people for both educational and hobbyist purposes.
+        
+        <br><br><br>
+
+        <b>What is next?</b>
+        <div class="ui list">
+            <div class="item">
+              <i class="chevron right icon"></i>
+              <div class="content">
+                <a class="header">Online Multiplayer</a>
+                <div class="description">Our eventual goal is add the ability for multiple people to work on the same project at once with live updates of the other persons actions.</div>
+              </div>
+            </div>
+            <br>
+            <div class="item">
+              <i class="chevron right icon"></i>
+              <div class="content">
+                <a class="header">Project Sharing</a>
+                <div class="description">The ability to share your projects as well as download others from either an in-game browser or from our website and easily integrate them into your own game. This will also be available for snippets.</div>
+              </div>
+            </div>
+            <br>
+            <div class="item">
+                <i class="chevron right icon"></i>
+                <div class="content">
+                    <a class="header">Puzzles and Chalenges</a>
+                    <div class="description">
+                        We hope to add puzzles set by us as well as eventually having the ability for users to easily create and share there own puzzles.
+                        The puzzles which come pre-installed will act as both a incremental tutorial as well as extra challenges for advanced users.
+                        This will work but being given a description of what you need to build as well as input and output blocks which will give and recieve certain multiple randomised signals which must be correct in order to complete the level.
+                        You may also be given size / layer restrictions or block limits, these will all be up to the creator of the level.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="item">
+              <i class="chevron right icon"></i>
+              <div class="content">
+                <a class="header">Versatile Snippets System</a>
+                <div class="description">Implement a delete and rotate selection option as well as a layered snippets file tree.</div>
+              </div>
+            </div>
+            <br>
+            <div class="item">
+              <i class="chevron right icon"></i>
+              <div class="content">
+                <a class="header">Lots Of Optimisation</a>
+                <div class="description">
+                    We still have a lot of work to do in regards to optimisation and some smaller bug fixes. At the moment the creation of a loop either breaks the game or causes a mass of bugs.
+                    Our current solution to this just prevents you from making such loops however this is incredibly intelligent. If anyone believes they may have a solution to this problem feel free to check out the source code and send us an email.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          For more information and up to date news on what we are currently working on visit our Trello page at <a href="https://trello.com/b/kMgKFAj1/computer-blocks">https://trello.com/b/kMgKFAj1/computer-blocks</a>.
+
     </div>
+
+    <br><br><br><br><br><br><br><br>
 </body>
 </html>
